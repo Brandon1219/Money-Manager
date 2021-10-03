@@ -8,3 +8,62 @@ for r in arr1: # Outer loop
    for c in r: # inner loop
       print(c,end = " ")
    print()
+
+------------------------New----------------------------
+from array import *
+print("Purchase history: ")  
+print()  
+arr1 = [
+["tomato", "food", 5,"3/9/2021"], 
+["shirt", "clothes", 15,"3/7/2021"], 
+["juice", "food", 2,"3/8/2021"], 
+["earphones", "", 50,"3/5/2021"], 
+["drink", "food", 4.5,"3/8/2021"], 
+["banana", "food", 3,"3/9/2021"]
+]
+for r in arr1: # Outer loop 
+   for c in r: # inner loop
+      print(c,end = "|")
+   print()
+   
+--------------------------------------------Delete--------------------------------
+from array import * 
+print("Before delete:")  
+arr1 = [
+["tomato", "food", 5,"3/9/2021"], 
+["shirt", "clothes", 15,"3/7/2021"], 
+["juice", "food", 2,"3/8/2021"], 
+["earphone", "", 50,"3/5/2021"], 
+["drink", "food", 4.5,"3/8/2021"], 
+["banana", "food", 3,"3/9/2021"]
+]
+for r in arr1: # Outer loop 
+   for c in r: # inner loop
+      print(c,end = "|")
+   print()
+print() 
+deleteIndex = 1
+deleteItem =arr1[deleteIndex]
+print("Are you sure to delete entry:" + str(deleteItem) + "?")  
+print(arr1.pop(deleteIndex))
+print()  
+print("After deleted:")  
+for r in arr1: # Outer loop 
+   for c in r: # inner loop
+      print(c,end = "|")
+   print()
+   
+------------------------------------------Sort-------------------------------------------------------
+def myFunc(e):
+  return e['year']
+
+cars = [
+  {'car': 'Ford', 'year': 2005},
+  {'car': 'Mitsubishi', 'year': 2000},
+  {'car': 'BMW', 'year': 2019},
+  {'car': 'VW', 'year': 2011}
+]
+
+cars.sort(key=myFunc)
+
+print(cars)
