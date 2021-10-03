@@ -1,0 +1,10 @@
+
+
+
+from array import *
+print("Purchase history: ")  
+arr1 = [["tomato", "food", 5,"3/9/2021"], ["shirt", "clothes", 15,"3/7/2021"], ["juice", "food", 2,"3/8/2021"], ["banana", "food", 3,"3/9/2021"]]
+for r in arr1: # Outer loop 
+   for c in r: # inner loop
+      print(c,end = " ")
+   print()
